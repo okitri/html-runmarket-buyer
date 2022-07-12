@@ -32,3 +32,8 @@ body{
   background: linear-gradient(118deg, #3373BA, rgba(78, 168, 220, 0.7));
   box-shadow: 0 0 10px 1px rgba(78, 168, 220, 0.7);
 }
+
+/* FORM */
+.form-label {
+	font-size: 0.9rem;
+}
