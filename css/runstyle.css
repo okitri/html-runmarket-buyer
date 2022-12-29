@@ -63,7 +63,7 @@ body{
 	background-color: rgba(86,113,141,0.5);
 }
 .buyer .switch label input[type="checkbox"]:checked + .lever::after {
-  	background-color: #56718d;
+	background-color: #56718d;
 }
 .buyer .badge-default{
 	background-color: #56718D !important;
@@ -75,13 +75,36 @@ body{
 	color: #56718D !important;
 }
 .buyer .active {
-  	color: #56718D !important;
+	color: #56718D !important;
 }
 .side-nav .collapsible-body a {
-  	background-color: rgba(0,0,0,0.025) !important;
+	background-color: rgba(0,0,0,0.025) !important;
 }
 .white-skin .side-nav .collapsible li a:not(.collapsible-header):hover {
-  color: #56718D !important;
+	color: #56718D !important;
+}
+.buyer .navbar{
+	background-color: #56718D !important;
+}
+.buyer.white-skin .navbar .navbar-nav .nav-item a, .buyer.white-skin .navbar.double-nav a {
+	color: #FFFFFF;
+	font-size: .9rem;
+}
+.buyer.white-skin .navbar .navbar-nav .nav-item .dropdown-menu a, .buyer.white-skin .navbar.double-nav .dropdown-menu a {
+	color: #333333;
+	font-size: .9rem;
+}
+.buyer .dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover{
+	background-color: rgba(86,113,141,0.15) !important;
+	color: #333333 !important;
+	box-shadow: none;
+	border-radius: .25rem;
+}
+.buyer.white-skin .navbar .navbar-nav .nav-item .dropdown-menu a:hover{
+	background-color: rgba(86,113,141,0.15) !important;
+	color: #333333 !important;
+	box-shadow: none;
+	border-radius: .25rem;
 }
 
 /* switcher */
@@ -94,6 +117,9 @@ body{
 	border-bottom: 1px rgba(0,0,0,0.1) solid;
 	padding: 8px 0px;
 }
+.switch label .lever {
+	background-color: #e4e4e4;
+}
 
 /* sidebar */
 .side-nav .collapsible a {
@@ -103,27 +129,19 @@ body{
 	color: #333333;
 }
 .collapsible-header .fas.fa-angle-down {
-  	color: #C4C4C4;
+	color: #C4C4C4;
 }
 .side-nav .collapsible a {
-  	height: 42px;
-  	line-height: 42px;
+	height: 42px;
+	line-height: 42px;
 }
 
 /* navbar */
-.white-skin .navbar .navbar-nav .nav-item a, .white-skin .navbar.double-nav a {
-	color: #5C5C5C;
-	font-size: 1rem;
-}
 .notification{
 	position: absolute;
 	left: 16px;
 	top: 2px;
 	border-radius: .5rem;
-}
-.white-skin .navbar .navbar-nav .nav-item a, .white-skin .navbar.double-nav a {
-	font-size: .9rem;
-	color: #333333;
 }
 
 /* footer */
