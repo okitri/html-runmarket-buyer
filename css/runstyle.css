@@ -1,6 +1,9 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
+/* icon */
+@import url('https://unicons.iconscout.com/release/v4.0.0/css/line.css');
+
 /* general */
 body{
 	font-family: 'Inter', sans-serif;
@@ -135,6 +138,10 @@ body{
 .side-nav .collapsible a {
 	height: 42px;
 	line-height: 42px;
+}
+.side-nav .icon-menu {
+	font-size: 1.25rem !important;
+	margin-right: .5rem;
 }
 
 /* navbar */
