@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Detail Seller Information | Vendor Management | RUN Market</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/css/runstyle.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body id="buyer">
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div class="navbar-nav align-items-xl-center me-3 me-xl-0">
+              <a class="nav-item px-0 waves-effect waves-dark d-flex" href="vendor-management-seller-information.html">
+                <i class="ti ti-arrow-left ti-sm me-xl-2 text-primary"></i>
+                <b class="text-primary">Back</b>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+
+              
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+                <!-- Notification -->
+                <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-4 me-xl-3">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                  >
+                    <i class="ti ti-bell ti-md"></i>
+                    <span class="badge bg-danger rounded-pill badge-notifications">1</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div class="dropdown-header d-flex align-items-center py-3">
+                        <h5 class="text-body mb-0 me-auto">Notification</h5>
+                        <a
+                          href="javascript:void(0)"
+                          class="dropdown-notifications-all text-body"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Mark all as read"
+                          ><i class="ti ti-mail-opened fs-4"></i
+                        ></a>
+                      </div>
+                    </li>
+                    <li class="dropdown-notifications-list scrollable-container">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img src="../assets/img/avatars/default.png" alt class="h-auto rounded-circle" />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                              <p class="mb-0">Won the monthly best seller gold badge</p>
+                              <small class="text-muted">1h ago</small>
+                            </div>
+                            <div class="flex-shrink-0 dropdown-notifications-actions">
+                              <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-menu-footer border-top">
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center"
+                      >
+                        View all notifications
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ Notification -->
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0 me-3">
+                        <div class="avatar avatar-online">
+                          <img src="../assets/img/avatars/default.png" alt class="h-auto rounded-circle" />
+                        </div>
+                      </div>
+                      <div class="flex-grow-1">
+                        <span class="fw-semibold d-block">Hello, oki</span>
+                        <small class="text-secondary" style="position: relative;top:-4px;"><b>Buyer</b></small>
+                      </div>
+                      <div class="ms-2">
+                        <i class="ti ti-chevron-down"></i>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="pages-profile-user.html">
+                        <i class="ti ti-user me-2 ti-sm"></i>
+                        <span class="align-middle">Manage Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages-profile-user.html">
+                        <i class="ti ti-settings me-2 ti-sm"></i>
+                        <span class="align-middle">Account Configuration</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-danger" href="auth-login-cover.html" target="_blank">
+                        <i class="ti ti-logout me-2 ti-sm"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <h4 class="fw-bold py-3 mb-4">Detail Seller Information</h4>
+                </div>
+                <div class="col-lg-6">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumb-style1 justify-content-end">
+                      <li class="breadcrumb-item">
+                        <a href="home.html">Home</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="vendor-management-seller-information.html">Seller Information</a>
+                      </li>
+                      <li class="breadcrumb-item active">Detail Seller Information</li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+              
+              <div class="row g-4">
+
+                <div class="nav-align-top">
+                  <ul class="nav nav-pills mb-3" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#company-information" aria-controls="company-information" aria-selected="true">
+                        Company Information
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#contact-person" aria-controls="contact-person" aria-selected="false" tabindex="-1">
+                        Contact Person
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#bank-information" aria-controls="bank-information" aria-selected="false" tabindex="-1">
+                        Bank Information
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#business-sector" aria-controls="business-sector" aria-selected="false" tabindex="-1">
+                        Business Sector
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#item-category" aria-controls="item-category" aria-selected="false" tabindex="-1">
+                        Product Category
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#expertise-profile" aria-controls="expertise-profile" aria-selected="false" tabindex="-1">
+                        Expertise Profile
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#project-expertise" aria-controls="project-expertise" aria-selected="false" tabindex="-1">
+                        Project Expertise
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#legal-document" aria-controls="legal-document" aria-selected="false" tabindex="-1">
+                        Legal Document
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade active show" id="company-information" role="tabpanel">
+                      <h4 class="fw-bold mb-2">Company Information</h4>
+                      <p class="text-muted">Pengaturan Data Informasi Umum Perusahaan, Lengkapi untuk meningkatkan kepercayaan terhadap perusahaan anda </p>
+                      <!-- Header -->
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="card mb-3">
+                            <div class="user-profile-header-banner">
+                              <img src="../assets/img/pages/profile-banner.png" alt="Banner image" class="rounded-top img-fluid" />
+                            </div>
+                            <div class="user-profile-header d-flex flex-column flex-sm-row text-sm-start text-center mb-3">
+                              <div class="flex-shrink-0 mt-n3 mx-sm-0 mx-auto">
+                                <img src="../assets/img/avatars/default.png" alt="user image" width="80" class="d-block h-auto ms-0 ms-sm-4 rounded-circle user-profile-img border border-2 border-white"/>
+                              </div>
+                              <div class="flex-grow-1 mt-3 mt-sm-3">
+                                <div class="d-flex align-items-md-end align-items-sm-start align-items-center justify-content-md-between justify-content-start mx-4 flex-md-row flex-column gap-4">
+                                  <div class="user-profile-info">
+                                    <h4 class="mb-1">PT. Double Hattrick Indonesia</h4>
+                                    <ul class="list-inline mb-0 d-flex align-items-center flex-wrap justify-content-sm-start justify-content-center gap-2">
+                                      <li class="list-inline-item text-muted">DHTT001</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Company Name</label>
+                                    <div class="col-md-8">
+                                      <input class="form-control" type="text" value="PT. Double Hattrick Indonesia" id="" disabled>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Company Short Name</label>
+                                    <div class="col-md-8">
+                                      <input class="form-control" type="text" value="DHTT001" id="" disabled>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">NIB</label>
+                                    <div class="col-md-8">
+                                      <input class="form-control" type="text" value="12560012" id="" disabled>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Company Category</label>
+                                    <div class="col-md-8">
+                                      <select class="form-control" id="" disabled>
+                                        <option>-- Select Company Category --</option>
+                                        <option>Asuransi</option>
+                                        <option>Alat berat</option>
+                                        <option selected>Teknologi Informasi</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Taxpayer ID</label>
+                                    <div class="col-md-8">
+                                      <input class="form-control" type="text" value="454320009776112" id="" disabled>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Establishment Year</label>
+                                    <div class="col-md-8">
+                                      <input class="form-control" type="text" value="2010" id="" disabled>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h5 class="text-secondary mt-4 mb-3"><i class="ti ti-building-community"></i> Company Address</h5>
+                        <div class="col-lg-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-2 col-form-label">Address</label>
+                                    <div class="col-md-10">
+                                      <textarea class="form-control" rows="2" disabled>Jl. Kemerdekaan Abadi No.34, Terban, Gondokusuman, Yogyakarta, DI Yogyakarta</textarea>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">City</label>
+                                    <div class="col-md-8">
+                                      <select class="form-control" id="" disabled>
+                                        <option>-- Select Company Category --</option>
+                                        <option>Asuransi</option>
+                                        <option>Alat berat</option>
+                                        <option selected>Teknologi Informasi</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Postal Code</label>
+                                    <div class="col-md-8">
+                                      <input class="form-control" type="text" value="DHTT001" id="" disabled>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Company Category</label>
+                                    <div class="col-md-8">
+                                      <select class="form-control" id="" disabled>
+                                        <option>-- Select Company Category --</option>
+                                        <option>Asuransi</option>
+                                        <option>Alat berat</option>
+                                        <option selected>Teknologi Informasi</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Taxpayer ID</label>
+                                    <div class="col-md-8">
+                                      <input class="form-control" type="text" value="454320009776112" id="" disabled>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       <h5 class="text-secondary mt-4 mb-3"><i class="ti ti-info-circle"></i> Additional Info</h5>
+                       <div class="col-lg-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Company Name</label>
+                                    <div class="col-md-8">
+                                      <input class="form-control" type="text" value="PT. Double Hattrick Indonesia" id="" disabled>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Company Short Name</label>
+                                    <div class="col-md-8">
+                                      <input class="form-control" type="text" value="DHTT001" id="" disabled>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">NIB</label>
+                                    <div class="col-md-8">
+                                      <input class="form-control" type="text" value="12560012" id="" disabled>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Company Category</label>
+                                    <div class="col-md-8">
+                                      <select class="form-control" id="" disabled>
+                                        <option>-- Select Company Category --</option>
+                                        <option>Asuransi</option>
+                                        <option>Alat berat</option>
+                                        <option selected>Teknologi Informasi</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Taxpayer ID</label>
+                                    <div class="col-md-8">
+                                      <input class="form-control" type="text" value="454320009776112" id="" disabled>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="" class="col-md-4 col-form-label">Establishment Year</label>
+                                    <div class="col-md-8">
+                                      <input class="form-control" type="text" value="2010" id="" disabled>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--/ Header -->
+                    </div>
+                    <div class="tab-pane fade" id="contact-person" role="tabpanel">
+                      <h4 class="fw-bold mb-2">Contact Person</h4>
+                      <p class="text-muted">Pengaturan data kontak yang dapat dihubungi dari perusahaan anda </p>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <table class="table table-striped" id="datatable">
+                            <thead>
+                              <tr>
+                                <th width="5%">No</th>
+                                <th>ID Number</th>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Email</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>0001</td>
+                                <td>
+                                  <div class="d-flex justify-content-start align-items-center user-name">
+                                    <div class="avatar-wrapper">
+                                      <div class="avatar me-3">
+                                        <img src="../assets/img/avatars/user-default.png" alt="Avatar" class="rounded-circle">
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                      <span class="text-truncate fw-semibold">Umar Hamdani</span>
+                                      <small class="text-truncate text-muted">Account Manager</small>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td><a href="tel:0854-3232-1990">0854-3232-1990</a></td>
+                                <td><a href="mailto:umarhamdani@gmail.com">umarhamdani@gmail.com</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="bank-information" role="tabpanel">
+                      <h4 class="fw-bold mb-2">Bank Information</h4>
+                      <p class="text-muted">Pengaturan Data Informasi Bank yang dipakai di dalam perusahaan anda </p>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <table class="table table-striped" id="datatable1">
+                            <thead>
+                              <tr>
+                                <th width="5%">No</th>
+                                <th>Account Number</th>
+                                <th>Bank</th>
+                                <th>Name</th>
+                                <th>Currency</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>23459000342</td>
+                                <td>
+                                  <div class="d-flex justify-content-start align-items-center user-name">
+                                    <div class="avatar-wrapper">
+                                      <div class="avatar me-3">
+                                        <img src="../assets/img/avatars/img-bank-mandiri.png" alt="Avatar" class="rounded-circle">
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                      <span class="text-truncate fw-semibold">PT. BANK MANDIRI (PERSERO), Tbk</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>Umar Hamdani</td>
+                                <td>Rupiah (IDR)</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="business-sector" role="tabpanel">
+                      <h4 class="fw-bold mb-2">Business Sector</h4>
+                      <p class="text-muted">Pengaturan informasi Klasifikasi Baku Lapangan Usaha Indonesia (KLBI) sesuai dengan yang terdaftar untuk perusahaan anda </p>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <table class="table table-striped" id="datatable2">
+                            <thead>
+                              <tr>
+                                <th width="5%">No</th>
+                                <th>Business Sector</th>
+                                <th>Business Sub Sector</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>AKTIVITAS AGEN PERJALANAN, PENYELENGGARA TUR DAN JASA RESERVASI LAINNYA</td>
+                                <td>24101 INDUSTRI BESI DAN BAJA DASAR (IRON AND STEEL MAKING)</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="item-category" role="tabpanel">
+                      <h4 class="fw-bold mb-2">Product Category</h4>
+                      <p class="text-muted">Atur dan kelola kategori barang untuk pencatatan internal perusahaan anda </p>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <table class="table table-striped" id="datatable3">
+                            <thead>
+                              <tr>
+                                <th width="5%">No</th>
+                                <th>Product Category</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>
+                                  <div class="d-flex justify-content-start align-items-center user-name">
+                                    <div class="d-flex flex-column">
+                                      <span class="text-truncate fw-semibold">Alat Berat</span>
+                                      <small class="text-truncate text-muted">000231</small>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="expertise-profile" role="tabpanel">
+                      <h4 class="fw-bold mb-2">Expertise Profile</h4>
+                      <p class="text-muted">Pengelolaan data Tenaga Ahli yang dimiliki oleh perusahaan anda </p>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <table class="table table-striped" id="datatable4">
+                            <thead>
+                              <tr>
+                                <th width="5%">No</th>
+                                <th>Profile Name</th>
+                                <th>Education</th>
+                                <th>Country</th>
+                                <th class="text-end">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>
+                                  <div class="d-flex justify-content-start align-items-center user-name">
+                                    <div class="avatar-wrapper">
+                                      <div class="avatar me-3">
+                                        <img src="../assets/img/avatars/11.png" alt="Avatar" class="rounded-circle">
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                      <span class="text-truncate fw-semibold">Takuma Sato</span>
+                                      <small class="text-truncate text-muted">Chief of Technology Officer</small>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>S3 Engineering</td>
+                                <td>Japan</td>
+                                <td class="text-end">
+                                  <a href="" class="btn btn-outline-secondary btn-sm waves-effect waves-dark" data-bs-toggle="offcanvas" data-bs-target="#detail-expertise">Detail</a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!-- Offcanvas Expertise -->
+                          <div class="offcanvas offcanvas-bottom" data-bs-scroll="true" tabindex="-1" id="detail-expertise" aria-labelledby="offcanvasBothLabel">
+                            <div class="offcanvas-header border-bottom border-light">
+                              <h5 id="offcanvasBothLabel" class="offcanvas-title">Detail Expertise</h5>
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body mx-0 flex-grow-0">
+
+                              <div class="nav-align-left mb-4">
+                                <ul class="nav nav-pills me-3" role="tablist">
+                                  <li class="nav-item" role="presentation">
+                                    <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-general" aria-controls="navs-pills-general" aria-selected="true">
+                                      <i class="ti ti-info-circle me-2"></i> General
+                                    </button>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-certificate" aria-controls="navs-pills-certificate" aria-selected="false" tabindex="-1">
+                                      <i class="ti ti-certificate me-2"></i> Certificate
+                                    </button>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-language-proficiency" aria-controls="navs-pills-language-proficiency" aria-selected="false" tabindex="-1">
+                                      <i class="ti ti-language me-2"></i> Language Proficiency
+                                    </button>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-working-experience" aria-controls="navs-pills-working-experience" aria-selected="false" tabindex="-1">
+                                      <i class="ti ti-tie me-2"></i> Working Experience
+                                    </button>
+                                    <li class="nav-item" role="presentation">
+                                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-project-experience" aria-controls="navs-pills-project-experience" aria-selected="false" tabindex="-1">
+                                      <i class="ti ti-briefcase me-2"></i> Project Experience
+                                    </button>
+                                  </li>
+                                </ul>
+                                <div class="tab-content">
+                                  <div class="tab-pane fade active show" id="navs-pills-general" role="tabpanel">
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                        <h5 class="text-secondary mb-3"><i class="ti ti-info-circle me-2"></i> General</h5>
+                                        <hr>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="mb-2 row">
+                                          <label for="" class="col-md-4 col-form-label">Profile Name</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" value="Takuma Sato" id="" disabled="">
+                                          </div>
+                                        </div>
+                                        <div class="mb-2 row">
+                                          <label for="" class="col-md-4 col-form-label">Position</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" value="Chief of Technology Officer" id="" disabled="">
+                                          </div>
+                                        </div>
+                                        <div class="mb-2 row">
+                                          <label for="" class="col-md-4 col-form-label">Company</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" value="RUN System" id="" disabled="">
+                                          </div>
+                                        </div>
+                                        <div class="mb-2 row">
+                                          <label for="" class="col-md-4 col-form-label">Birth Place</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" value="Tokyo" id="" disabled="">
+                                          </div>
+                                        </div>
+                                        <div class="mb-2 row">
+                                          <label for="" class="col-md-4 col-form-label">Birth Date</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" value="12/05/1980" id="" disabled="">
+                                          </div>
+                                        </div>
+                                        <div class="mb-2 row">
+                                          <label for="" class="col-md-4 col-form-label">Identity Number</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" value="032100" id="" disabled="">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="mb-2 row">
+                                          <label for="" class="col-md-4 col-form-label">Address</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" value="Jl. Kemerdekaaan No.32" id="" disabled="">
+                                          </div>
+                                        </div>
+                                        <div class="mb-2 row">
+                                          <label for="" class="col-md-4 col-form-label">NPWP</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" value="321229000" id="" disabled="">
+                                          </div>
+                                        </div>
+                                        <div class="mb-2 row">
+                                          <label for="" class="col-md-4 col-form-label">Education</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" value="S3 Engineering" id="" disabled="">
+                                          </div>
+                                        </div>
+                                        <div class="mb-2 row">
+                                          <label for="" class="col-md-4 col-form-label">Country</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" value="Japan" id="" disabled="">
+                                          </div>
+                                        </div>
+                                        <div class="mb-2 row">
+                                          <label for="" class="col-md-4 col-form-label">Gender</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" value="Male" id="" disabled="">
+                                          </div>
+                                        </div>
+                                        <div class="mb-2 row">
+                                          <label for="" class="col-md-4 col-form-label">Email</label>
+                                          <div class="col-md-8">
+                                            <input class="form-control" type="text" value="takuma.sato@runsystem.id" id="" disabled="">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade" id="navs-pills-certificate" role="tabpanel">
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                        <h5 class="text-secondary mb-3"><i class="ti ti-certificate"></i> Certificate</h5>
+                                        <hr>
+                                      </div>
+                                      <div class="col-lg-12">
+                                        <div class="table-responsive text-nowrap">
+                                          <table class="table table-striped">
+                                            <thead>
+                                              <tr>
+                                                <th width="10">No</th>
+                                                <th>Document Name</th>
+                                                <th class="text-end">Action</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody class="table-border-bottom-0">
+                                              <tr>
+                                                <td>1</td>
+                                                <td>Web Architecture Certified</td>
+                                                <td class="text-end">
+                                                  <button class="btn btn-outline-primary btn-sm"><i class="tf-icons ti ti-zoom-in"></i></button>
+                                                  <button class="btn btn-outline-success btn-sm"><i class="ti ti-download"></i></button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>2</td>
+                                                <td>CISCO Certified</td>
+                                                <td class="text-end">
+                                                  <button class="btn btn-outline-primary btn-sm"><i class="tf-icons ti ti-zoom-in"></i></button>
+                                                  <button class="btn btn-outline-success btn-sm"><i class="ti ti-download"></i></button>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade" id="navs-pills-language-proficiency" role="tabpanel">
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                        <h5 class="text-secondary mb-3"><i class="ti ti-language"></i> Language Proficiency</h5>
+                                      </div>
+                                      <div class="col-lg-12">
+                                        <div class="table-responsive text-nowrap">
+                                          <table class="table table-striped">
+                                            <thead>
+                                              <tr>
+                                                <th width="10">No</th>
+                                                <th>Language</th>
+                                                <th class="text-end">Native</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody class="table-border-bottom-0">
+                                              <tr>
+                                                <td>1</td>
+                                                <td>English</td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>2</td>
+                                                <td>Bahasa Indonesia</td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>3</td>
+                                                <td>Japan</td>
+                                                <td class="text-end"><i class="ti ti-circle-check text-success"></i></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade" id="navs-pills-working-experience" role="tabpanel">
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                        <h5 class="text-secondary mb-3"><i class="ti ti-tie"></i> Working Experience</h5>
+                                      </div>
+                                      <div class="col-lg-12">
+                                        <div class="table-responsive text-nowrap">
+                                          <table class="table table-striped">
+                                            <thead>
+                                              <tr>
+                                                <th width="10">No</th>
+                                                <th>Company</th>
+                                                <th>Position</th>
+                                                <th class="text-end">Year Active</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody class="table-border-bottom-0">
+                                              <tr>
+                                                <td>1</td>
+                                                <td>Honda Japan</td>
+                                                <td>Chief of Technology Officer</td>
+                                                <td class="text-end">2000-2005</td>
+                                              </tr>
+                                              <tr>
+                                                <td>2</td>
+                                                <td>RUN System</td>
+                                                <td>Chief of Technology Officer</td>
+                                                <td class="text-end">2005-2010</td>
+                                              </tr>
+                                              <tr>
+                                                <td>3</td>
+                                                <td>Fastest Lap Pte, Ltd</td>
+                                                <td>Chief of Technology Officer</td>
+                                                <td class="text-end">2011-2023</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade" id="navs-pills-project-experience" role="tabpanel">
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                        <h5 class="text-secondary mb-3"><i class="ti ti-briefcase"></i> Project Experience</h5>
+                                      </div>
+                                      <div class="col-lg-12">
+                                        <div class="table-responsive text-nowrap">
+                                          <table class="table table-striped">
+                                            <thead>
+                                              <tr>
+                                                <th width="10">No</th>
+                                                <th>Project Experience</th>
+                                                <th>Project Owner</th>
+                                                <th>Project Value</th>
+                                                <th class="text-end">Contract Date</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody class="table-border-bottom-0">
+                                              <tr>
+                                                <td>1</td>
+                                                <td>Mandalika Circuit ICT Integration System</td>
+                                                <td>ITDC</td>
+                                                <td>302.000.000.000</td>
+                                                <td class="text-end">22/01/2017</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End offcanvas Expertise -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="project-expertise" role="tabpanel">
+                      <h4 class="fw-bold mb-2">Project Expertise</h4>
+                      <p class="text-muted">Tambahkan pengalaman pekerjaan yang dimiliki untuk meningkatkan nilai perusahaan anda </p>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <table class="table table-striped" id="datatable4">
+                            <thead>
+                              <tr>
+                                <th width="5%">No</th>
+                                <th>Project Experience</th>
+                                <th>Project Owner</th>
+                                <th>Project Value</th>
+                                <th>Contract Date</th>
+                                <th>Project Results</th>
+                                <th class="text-end">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>
+                                  <div class="d-flex justify-content-start align-items-center user-name">
+                                    <div class="d-flex flex-column">
+                                      <span class="text-truncate fw-semibold">Mandalika Circuit ICT Integration System</span>
+                                      <small class="text-truncate text-muted">Teknologi Informasi</small>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="d-flex justify-content-start align-items-center user-name">
+                                    <div class="d-flex flex-column">
+                                      <span class="text-truncate fw-semibold">ITDC</span>
+                                      <small class="text-truncate text-muted" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Contract Number">11223321200</small>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>302.000.000.000</td>
+                                <td>22/01/2017</td>
+                                <td>
+                                  <span class="badge  bg-label-success">Done</span>
+                                </td>
+                                <td class="text-end">
+                                  <a href="" class="btn btn-outline-secondary btn-sm waves-effect waves-dark" data-bs-toggle="offcanvas" data-bs-target="#detail-project">Detail</a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!-- Offcanvas Project Expertise -->
+                          <div class="offcanvas offcanvas-bottom" data-bs-scroll="true" tabindex="-1" id="detail-project" aria-labelledby="offcanvasBothLabel">
+                            <div class="offcanvas-header border-bottom border-light">
+                              <h5 id="offcanvasBothLabel" class="offcanvas-title">Detail Project Expertise</h5>
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body mx-0 flex-grow-0">
+                              <div class="mb-4">
+                                <h5 class="text-secondary mb-3"><i class="ti ti-info-circle"></i> General</h5>
+                                <div class="row">
+                                  <div class="col-lg-6">
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">Project Experience</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="Mandalika Circuit ICT Integration System" id="" disabled="">
+                                      </div>
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">Project Category</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="Teknologi Informasi" id="" disabled="">
+                                      </div>
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">Contract Number</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="11223321200" id="" disabled="">
+                                      </div>
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">Contract Date</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="22/01/2017" id="" disabled="">
+                                      </div>
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">Project Owner</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="ITDC" id="" disabled="">
+                                      </div>
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">Owner Address</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="-" id="" disabled="">
+                                      </div>
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">Project Location</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="Mandalika, Lombok" id="" disabled="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">Project Results</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="Done" id="" disabled="">
+                                      </div>
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">Project Value</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="302.000.000.000" id="" disabled="">
+                                      </div>
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">Currency</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="IDR" id="" disabled="">
+                                      </div>
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">End of Contract</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="2018" id="" disabled="">
+                                      </div>
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">Work Achievement</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="Done" id="" disabled="">
+                                      </div>
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="" class="col-md-4 col-form-label">Progress</label>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text" value="Done" id="" disabled="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End offcanvas Project Expertise -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="legal-document" role="tabpanel">
+                      <h4 class="fw-bold mb-2">Legal Document</h4>
+                      <p class="text-muted">Pengelolaan dokumen legalitas perusahaan anda, Lengkapi data dan Unggah Dokumen untuk validitas tiap informasi legalitas </p>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <table class="table table-striped" id="datatable5">
+                            <thead>
+                              <tr>
+                                <th width="5%">No</th>
+                                <th>Category</th>
+                                <th>Initial Document Name</th>
+                                <th>Valid From</th>
+                                <th>Valid To</th>
+                                <th>Licensed By</th>
+                                <th class="text-end">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Akta Pendirian</td>
+                                <td>Akta Pendirian Tempat Usaha</td>
+                                <td>25/10/2019</td>
+                                <td>25/10/2024</td>
+                                <td>Notaris</td>
+                                <td class="text-end">
+                                  <button class="btn btn-outline-primary btn-sm waves-effect"><i class="tf-icons ti ti-zoom-in"></i></button>
+                                  <button class="btn btn-outline-success btn-sm waves-effect"><i class="ti ti-download"></i></button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Surat Perijinan</td>
+                                <td>Surat Ijin Tempat Usaha</td>
+                                <td>16/12/2019</td>
+                                <td>16/12/2024</td>
+                                <td>Notaris</td>
+                                <td class="text-end">
+                                  <button class="btn btn-outline-primary btn-sm waves-effect"><i class="tf-icons ti ti-zoom-in"></i></button>
+                                  <button class="btn btn-outline-success btn-sm waves-effect"><i class="ti ti-download"></i></button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl">
+                <div
+                  class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column"
+                >
+                  <div>
+                    ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    , made with <i class="ti ti-heart text-danger"></i> by RUN System Design Team</a>
+                  </div>
+                  <div>
+                    Version 2.0
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/libs/node-waves/node-waves.js"></script>
+
+    <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/moment/moment.js"></script>
+    <script src="../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="../assets/vendor/libs/select2/select2.js"></script>
+    <script src="../assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="../assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <script src="../assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+    <script src="../assets/vendor/libs/cleavejs/cleave.js"></script>
+    <script src="../assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../assets/js/app-user-list.js"></script>
+    <script src="../assets/js/ui-popover.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#datatable,#datatable1,#datatable2,#datatable3,#datatable4,#datatable5').DataTable();
+      });
+    </script>
+  </body>
+</html>

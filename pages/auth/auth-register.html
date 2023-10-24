@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style customizer-hide"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../../../assets/"
+  data-template="vertical-menu-template-no-customizer"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Register | RUN Market<</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../../../assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="../../../assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="../../../assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../../../assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="../../../assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="../../../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../../../assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="../../../assets/vendor/libs/typeahead-js/typeahead.css" />
+    <!-- Vendor -->
+    <link rel="stylesheet" href="../../../assets/vendor/libs/bs-stepper/bs-stepper.css" />
+    <link rel="stylesheet" href="../../../assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
+    <link rel="stylesheet" href="../../../assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="../../../assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../../../assets/css/runstyle.css" />
+
+    <!-- Page -->
+    <link rel="stylesheet" href="../../../assets/vendor/css/pages/page-auth.css" />
+    <!-- Helpers -->
+    <script src="../../../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../../../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Content -->
+
+    <div class="authentication-wrapper authentication-cover authentication-bg">
+      <div class="authentication-inner row">
+        <!-- Left Text -->
+        <div
+          class="d-none d-lg-flex col-lg-3 align-items-end p-5 auth-cover-bg-color position-relative auth-multisteps-bg-height" style="background: linear-gradient(72.47deg, #3373BA 22.16%, rgba(51, 115, 186, 0.7) 76.47%);">
+          <div class="d-lg-inline-block">
+            <h3 class="text-white">Create RUN Market Account</h3>
+            <p class="text-white">
+              RUN Market provides innovative procurement process management solutions that allow buyers and vendors to connect with each other on a single platform.
+            </p>
+            <a href="https://runmarket.id/contact-us/" class="text-white"><u><i class="ti ti-help"></i> Need help?</u></a>
+          </div>
+        </div>
+        <!-- /Left Text -->
+
+        <!--  Multi Steps Registration -->
+        <div class="d-flex col-lg-9 align-items-center justify-content-center p-sm-5 p-3">
+          <div class="w-px-800">
+            <div id="multiStepsValidation" class="bs-stepper shadow-none">
+              <div class="bs-stepper-header border-bottom-0">
+                <div class="step" data-target="#accountDetailsValidation">
+                  <button type="button" class="step-trigger">
+                    <span class="bs-stepper-circle"><i class="ti ti-building ti-sm"></i></span>
+                    <span class="bs-stepper-label">
+                      <span class="bs-stepper-title">Company</span>
+                      <span class="bs-stepper-subtitle">Company Information</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="line">
+                  <i class="ti ti-chevron-right"></i>
+                </div>
+                <div class="step" data-target="#personalInfoValidation">
+                  <button type="button" class="step-trigger">
+                    <span class="bs-stepper-circle"><i class="ti ti-license ti-sm"></i></span>
+                    <span class="bs-stepper-label">
+                      <span class="bs-stepper-title">Agreement</span>
+                      <span class="bs-stepper-subtitle">Terms and Conditions</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="line">
+                  <i class="ti ti-chevron-right"></i>
+                </div>
+                <div class="step" data-target="#billingLinksValidation">
+                  <button type="button" class="step-trigger">
+                    <span class="bs-stepper-circle"><i class="ti ti-user-check ti-sm"></i></span>
+                    <span class="bs-stepper-label">
+                      <span class="bs-stepper-title">Account</span>
+                      <span class="bs-stepper-subtitle">Account Verification</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="bs-stepper-content">
+                <form id="multiStepsForm" onSubmit="return false">
+                  <!-- Account Details -->
+                  <div id="accountDetailsValidation" class="content">
+                    <div class="content-header mb-4">
+                      <h3 class="mb-1">Company Information</h3>
+                      <p>Enter your company details</p>
+                    </div>
+                    <div class="row g-3 mb-3">
+                      <div class="col-md mb-md-0 mb-2">
+                        <div class="form-check custom-option custom-option-icon">
+                          <label class="form-check-label custom-option-content" for="customRadioIcon1">
+                            <span class="custom-option-body">
+                              <i class="ti ti-building-store"></i>
+                              <span class="custom-option-title">Seller</span>
+                              <small>Perusahaan anda akan registrasi sebagai Penjual</small>
+                            </span>
+                            <input
+                            name="customRadioIcon"
+                            class="form-check-input d-none"
+                            type="radio"
+                            value=""
+                            id="customRadioIcon1"
+                            checked
+                            />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md mb-md-0 mb-2">
+                        <div class="form-check custom-option custom-option-icon">
+                          <label class="form-check-label custom-option-content" for="customRadioIcon2">
+                            <span class="custom-option-body">
+                              <i class="ti ti-shopping-cart"></i>
+                              <span class="custom-option-title"> Buyer </span>
+                              <small>Perusahaan anda akan registrasi sebagai Pembeli</small>
+                            </span>
+                            <input
+                            name="customRadioIcon"
+                            class="form-check-input d-none"
+                            type="radio"
+                            value=""
+                            id="customRadioIcon2"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md">
+                        <div class="form-check custom-option custom-option-icon">
+                          <label class="form-check-label custom-option-content" for="customRadioIcon3">
+                            <span class="custom-option-body">
+                              <i class="ti ti-users"></i>
+                              <span class="custom-option-title"> Both </span>
+                              <small>Perusahaan anda akan registrasi sebagai Pembeli dan Penjual</small>
+                            </span>
+                            <input
+                            name="customRadioIcon"
+                            class="form-check-input d-none"
+                            type="radio"
+                            value=""
+                            id="customRadioIcon3"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <label class="form-label" for="">Company Name <span class="text-danger">*</span></label>
+                        <input
+                          type="text"
+                          name=""
+                          id=""
+                          class="form-control"
+                          placeholder="Your company name"
+                        />
+                      </div>
+                      <div class="col-sm-6">
+                        <label class="form-label" for="">Email <span class="text-danger">*</span></label>
+                        <input
+                          type="email"
+                          name=""
+                          id=""
+                          class="form-control"
+                          placeholder="Your company email"
+                          aria-label=""
+                        />
+                      </div>
+                      <div class="col-sm-12">
+                        <label class="form-label" for="">Phone Number <span class="text-danger">*</span></label>
+                        <div class="input-group input-group-merge">
+                          <input
+                            type="number"
+                            id=""
+                            name=""
+                            class="form-control"
+                            placeholder="Your company phone number"
+                            aria-describedby=""
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex justify-content-between mt-4">
+                        <button class="btn btn-label-secondary btn-prev" disabled>
+                          <i class="ti ti-arrow-left ti-xs me-sm-1 me-0"></i>
+                          <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                        </button>
+                        <button class="btn btn-primary btn-next">
+                          <span class="align-middle d-sm-inline-block d-none me-sm-1 me-0">Next</span>
+                          <i class="ti ti-arrow-right ti-xs"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Personal Info -->
+                  <div id="personalInfoValidation" class="content">
+                    <div class="content-header mb-4">
+                      <h3 class="mb-1">Terms and Conditions</h3>
+                      <p>Read our terms and conditions carefully</p>
+                    </div>
+                    <div class="row g-3">
+                      <div class="col-sm-12">
+                        <div style="height: 268px;overflow-x: scroll;padding: 1rem;border: 1px rgba(0,0,0,0.08) solid;border-radius: .5rem;">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                          <p>
+                            Consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                          <p>
+                            Consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                        </div>
+                        <div class="text-end mt-3">
+                          <p class="mb-0">
+                            With click "<b>Register</b>" you're agree with our Terms and Conditions
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex justify-content-between mt-4">
+                        <button class="btn btn-label-secondary btn-prev">
+                          <i class="ti ti-arrow-left ti-xs me-sm-1 me-0"></i>
+                          <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                        </button>
+                        <button class="btn btn-primary btn-next">
+                          <span class="align-middle d-sm-inline-block d-none me-sm-1 me-0">Next</span>
+                          <i class="ti ti-arrow-right ti-xs"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Billing Links -->
+                  <div id="billingLinksValidation" class="content">
+                    <div class="content-header">
+                      <h3 class="mb-1">Account Verification</h3>
+                      <p>Verify your RUN Market Account</p>
+                    </div>
+                    <div class="content-header text-center mb-4">
+                      <img src="../../../assets/img/illustrations/img-email-folder.png" class="pt-4" width="160">
+                      <h3 class="mb-1">Please check your email!</h3>
+                      <p>We have sent a verification email. If you haven't received an email in your inbox, <b>please check the spam box in your email</b>. Thank You</p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- / Multi Steps Registration -->
+      </div>
+    </div>
+
+    <script>
+      // Check selected custom option
+      window.Helpers.initCustomOptionCheck();
+    </script>
+
+    <!-- / Content -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../../../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../../../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../../../assets/vendor/js/bootstrap.js"></script>
+    <script src="../../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../../../assets/vendor/libs/node-waves/node-waves.js"></script>
+
+    <script src="../../../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../../../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../../../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="../../../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../../../assets/vendor/libs/cleavejs/cleave.js"></script>
+    <script src="../../../assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+    <script src="../../../assets/vendor/libs/bs-stepper/bs-stepper.js"></script>
+    <script src="../../../assets/vendor/libs/select2/select2.js"></script>
+    <script src="../../../assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="../../../assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <script src="../../../assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="../../../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../../../assets/js/pages-auth-multisteps.js"></script>
+  </body>
+</html>

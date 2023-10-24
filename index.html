@@ -1,108 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Sign In | RUN Market</title>
+<html
+  lang="en"
+  class="light-style customizer-hide"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template-no-customizer"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <title>Login | RUN Market</title>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="description" content="" />
 
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="css/runstyle.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
 
-  </style>
-</head>
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
 
-<body class="white-skin buyer">
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
+    <!-- Vendor -->
+    <link rel="stylesheet" href="assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+    <link rel="stylesheet" href="libs/ripple-js/src/ripple.css">
 
-  <!-- Main layout -->
-  <main>
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/runstyle.css" />
+    <!-- Page -->
+    <link rel="stylesheet" href="assets/vendor/css/pages/page-auth.css" />
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
 
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-4">
-          <div class="card card-signup z-depth-1">
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body style="background: linear-gradient(72.47deg, #3373BA 22.16%, rgba(51, 115, 186, 0.7) 76.47%);">
+    <!-- Content -->
+
+    <div class="container-xxl">
+      <div class="authentication-wrapper authentication-basic container-p-y">
+        <div class="authentication-inner py-4">
+          <!-- Login -->
+          <div class="card">
             <div class="card-body">
+              <!-- Logo -->
+              <div class="app-brand justify-content-center mb-4 mt-2">
+                <a href="index.html" class="app-brand-link gap-2">
+                  <span class="app-brand-logo">
+                    <img src="assets/img/branding/logo-runmarket.png" width="200">
+                  </span>
+                </a>
+              </div>
+              <!-- /Logo -->
+              <h5 class="mb-1 pt-2">Welcome to RUN Market 👋</h5>
+              <p class="mb-4">Sign in to start your session</p>
 
-              <img src="https://mdbootstrap.com/wp-content/uploads/2018/06/logo-mdb-jquery-small.png" class="logo">
-              <h4 class="card-title my-2">Create an account</h4>
-              <p class="slogan">It's free and anyone can join!</p>
+              <form id="formAuthentication" class="mb-3" action="pages/auth/index-account-verified.html" method="POST">
+                <div class="mb-3">
+                  <!--<label for="email" class="form-label">Company Code</label>-->
+                  <div class="input-group input-group-merge">
+                    <span class="input-group-text" id=""><i class="ti ti-building-skyscraper"></i></span>
+                    <input type="text" class="form-control" placeholder="Input 7 digit Company Code" aria-label="" aria-describedby="" autofocus />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <!--<label for="username" class="form-label">Username</label>-->
+                  <div class="input-group input-group-merge">
+                    <span class="input-group-text" id=""><i class="ti ti-user"></i></span>
+                    <input type="text" class="form-control" placeholder="Input username" aria-label="" aria-describedby="" autofocus />
+                  </div>
+                </div>
+                <div class="mb-3 form-password-toggle">
+                  <div class="input-group input-group-merge">
+                    <span class="input-group-text" id=""><i class="ti ti-lock-open"></i></span>
+                    <input type="password" id="password" class="form-control" name="password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
+                    <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
+                  </div>
+                  <div class="text-end">
+                    <a href="auth-forgot-password.html">
+                      <small>Forgot Password?</small>
+                    </a>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <a href="#" class="btn btn-outline-primary d-grid w-100" type="submit">Verify</a>
+                </div>
+              </form>
+              <form id="" class="mb-3" action="home.html" method="POST">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id=""><i class="ti ti-users"></i></span>
+                  <select class="form-select" id="inputGroupSelect01" disabled>
+                    <option selected disabled ="">Login as a..</option>
+                    <option value="1">Buyer</option>
+                    <option value="2">Seller</option>
+                  </select>
+                </div>
+                <!--
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="remember-me" />
+                    <label class="form-check-label" for="remember-me"> Remember Me </label>
+                  </div>
+                </div>-->
+                <div class="mb-3">
+                  <a href="#" class="btn btn-primary disabled d-grid w-100" type="submit">Sign in</a>
+                </div>
+              </form>
 
-              <!-- Email validation -->
-              <div class="md-form md-outline">
-                <i class="fas fa-envelope prefix"></i>
-                <input type="email" id="email" class="form-control validate">
-                <label for="email" data-error="wrong" data-success="right">Type your email</label>
+              <p class="text-center">
+                <span>Don’t have an account?</span>
+                <a href="auth-register.html">
+                  <span>Register</span>
+                </a>
+              </p>
+
+              <div class="d-flex justify-content-center">
               </div>
             </div>
           </div>
+          <!-- /Register -->
         </div>
       </div>
     </div>
 
-  </main>
-  <!-- Main layout -->
+    <!-- / Content -->
 
-  <!-- Footer -->
-  <footer class="page-footer pt-0 mt-5 rgba-stylish-light">
+    <!-- Init JS -->
+    <!-- Ripple JS -->
+    <script type="text/javascript">
+      $.ripple(".btn", {
+        debug: false, // Turn Ripple.js logging on/off
+        on: 'mousedown', // The event to trigger a ripple effect
 
-    <!-- Copyright -->
-    <div class="footer-copyright py-3 text-center">
-      <div class="container-fluid">
-        Copyright © 2021 RUN System. All rights reserved. <b>Version</b> 64689b83 
-      </div>
-    </div>
+        opacity: 0.4, // The opacity of the ripple
+        color: "auto", // Set the background color. If set to "auto", it will use the text color
+        multi: false, // Allow multiple ripples per element
 
-  </footer>
-  <!-- Footer -->
+        duration: 0.7, // The duration of the ripple
 
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
+        // Filter function for modifying the speed of the ripple
+        rate: function(pxPerSecond) {
+              return pxPerSecond;
+          },
 
-  <!-- Initializations -->
-  <script>
-    // SideNav Initialization
-    $(".button-collapse").sideNav();
+        easing: 'linear' // The CSS3 easing function of the ripple
+      });
+    </script>
 
-    var container = document.querySelector('.custom-scrollbar');
-    var ps = new PerfectScrollbar(container, {
-      wheelSpeed: 2,
-      wheelPropagation: true,
-      minScrollbarLength: 20
-    });
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
 
-    // Data Picker Initialization
-    $('.datepicker').pickadate();
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
 
-    // Material Select Initialization
-    $(document).ready(function () {
-      $('.mdb-select').material_select();
-    });
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
 
-    // Tooltips Initialization
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-  </script>
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <script src="assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+    <script src="libs/ripple-js/src/ripple.js"></script>
 
-</body>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
 
+    <!-- Page JS -->
+    <script src="assets/js/pages-auth.js"></script>
+  </body>
 </html>
