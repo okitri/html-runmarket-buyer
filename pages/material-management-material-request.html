@@ -15,7 +15,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Request for Quotation | E-Purchasing | RUN Market</title>
+    <title>Material Request | material Management | RUN Market</title>
 
     <meta name="description" content="" />
 
@@ -146,14 +146,14 @@
             </li>
 
             <!-- Material Management -->
-            <li class="menu-item">
+            <li class="menu-item open">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-package"></i>
                 <div data-i18n="Material Management">Material Management</div>
               </a>
 
               <ul class="menu-sub">
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="material-management-material-request.html" class="menu-link">
                     <div data-i18n="Material Request">Material Request</div>
                   </a>
@@ -162,14 +162,14 @@
             </li>
 
             <!-- E-Purchasing -->
-            <li class="menu-item open">
+            <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-shopping-cart"></i>
                 <div data-i18n="E-Purchasing">E-Purchasing</div>
               </a>
 
               <ul class="menu-sub">
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="epurchasing-request-for-quotation.html" class="menu-link">
                     <div data-i18n="Request for Quotation">Request for Quotation</div>
                   </a>
@@ -398,8 +398,8 @@
 
               <div class="row align-items-center pb-4">
                 <div class="col-8">
-                  <h4 class="fw-bold mb-2">Request for Quotation</h4>
-                  <p class="text-muted mb-0">Send information on your company's needs to all Sellers in RUN Market or your chosen Seller via Request for Quotation</p>
+                  <h4 class="fw-bold mb-2">Material Request</h4>
+                  <p class="text-muted mb-0">Users can make requests to purchase items from the procurement department with Material Request.</p>
                 </div>
                 <div class="col-4">
                   <nav aria-label="breadcrumb">
@@ -407,7 +407,7 @@
                       <li class="breadcrumb-item">
                         <a href="home.html">Home</a>
                       </li>
-                      <li class="breadcrumb-item active">Request for Quotation</li>
+                      <li class="breadcrumb-item active">Material Request</li>
                     </ol>
                   </nav>
                 </div>
@@ -419,13 +419,64 @@
                     <div class="card-body">
                       <div class="d-flex align-items-start justify-content-between">
                         <div class="content-left">
-                          <span>Total Category</span>
+                          <span>Unprocessed</span>
                           <div class="d-flex align-items-center my-1">
-                            <h4 class="mb-0 me-2">3</h4>
+                            <h4 class="mb-0 me-2">1</h4>
                           </div>
                         </div>
-                        <span class="badge bg-label-success rounded p-2">
-                          <i class="ti ti-building-warehouse"></i>
+                        <span class="badge bg-label-warning rounded p-2">
+                          <i class="ti ti-clock"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xl-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div class="content-left">
+                          <span>Draft</span>
+                          <div class="d-flex align-items-center my-1">
+                            <h4 class="mb-0 me-2">2</h4>
+                          </div>
+                        </div>
+                        <span class="badge bg-label-primary rounded p-2">
+                          <i class="ti ti-notes"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xl-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div class="content-left">
+                          <span>Processed to E-Purchasing</span>
+                          <div class="d-flex align-items-center my-1">
+                            <h4 class="mb-0 me-2">6</h4>
+                          </div>
+                        </div>
+                        <span class="badge bg-label-info rounded p-2">
+                          <i class="ti ti-shopping-cart"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xl-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div class="content-left">
+                          <span>Processed to E-Procurement</span>
+                          <div class="d-flex align-items-center my-1">
+                            <h4 class="mb-0 me-2">1</h4>
+                          </div>
+                        </div>
+                        <span class="badge bg-label-secondary rounded p-2">
+                          <i class="ti ti-box"></i>
                         </span>
                       </div>
                     </div>
@@ -469,6 +520,7 @@
                           </div>
                         </div>
                         <div class="col-xl-2 text-end">
+                          <a href="#" class="btn btn-outline-secondary btn-sm waves-effect waves-light" data-bs-toggle="offcanvas" data-bs-target="#insert-rfq"><i class="ti ti-file-report me-1"></i> Process</a>
                           <a href="#" class="btn btn-secondary btn-sm waves-effect waves-light" data-bs-toggle="offcanvas" data-bs-target="#insert-rfq"><i class="ti ti-plus me-1"></i> Insert</a>
                         </div>
                       </div>
@@ -752,11 +804,17 @@
                       <table class="table table-striped" id="datatable1">
                         <thead>
                           <tr>
+                            <th>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1"></label>
+                              </div>
+                            </th>
                             <th width="5%">No</th>
-                            <th>Document No.</th>
-                            <th>RFQ Name</th>
+                            <th>MR Document</th>
+                            <th>MR Name</th>
                             <th>Date</th>
-                            <th>Expired Date</th>
+                            <th>Processed to</th>
                             <th>Status</th>
                             <th>Total Estimated Price</th>
                             <th class="text-end">Action</th>
@@ -764,42 +822,48 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>1</td>
-                            <td>0023/RM/MR/MLLL/03/22</td>
                             <td>
-                              <div class="d-flex flex-column">
-                                <span class="text-truncate fw-semibold">Acara outdoor Corporate Gathering 2022</span>
-                                <small class="text-truncate text-muted">Pengadaan Barang</small>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2"></label>
                               </div>
                             </td>
-                            <td>22/04/2022</td>
-                            <td>22/05/2022</td>
+                            <td>1</td>
+                            <td>023/MR/MLLL/03/22</td>
                             <td>
-                              <span class="badge  bg-label-success">Active</span>
+                              <span class="text-truncate fw-semibold">Kebutuhan Laptop Engineer</span>
+                            </td>
+                            <td>22/04/2022</td>
+                            <td>-</td>
+                            <td>
+                              <span class="badge bg-label-primary">Draft</span>
                             </td>
                             <td>
-                              <h6 class="fw-bold text-success mb-0">Rp 100.000.000</h6>
+                              <h6 class="fw-bold text-success mb-0">Rp 7.000.000</h6>
                             </td>
                             <td class="text-end">
                               <a href="#" class="btn btn-outline-secondary btn-sm waves-effect waves-dark" data-bs-toggle="offcanvas" data-bs-target="#detail-category"><i class="ti ti-zoom-in me-1"></i> Detail</a>
                             </td>
                           </tr>
                           <tr>
-                            <td>2</td>
-                            <td>0005/RM/MR/NNNN/08/23</td>
                             <td>
-                              <div class="d-flex flex-column">
-                                <span class="text-truncate fw-semibold">Permintaan Pengadaan Device Tester</span>
-                                <small class="text-truncate text-muted">Pengadaan Barang</small>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                <label class="form-check-label" for="defaultCheck3"></label>
                               </div>
                             </td>
-                            <td>12/04/2022</td>
-                            <td>12/05/2022</td>
+                            <td>2</td>
+                            <td>022/MR/MLLL/03/22</td>
                             <td>
-                              <span class="badge  bg-label-success">Active</span>
+                              <span class="text-truncate fw-semibold">Kebutuhan Printer Marketing</span>
+                            </td>
+                            <td>11/04/2022</td>
+                            <td>E-Purchasing</td>
+                            <td>
+                              <span class="badge bg-label-primary">Draft</span>
                             </td>
                             <td>
-                              <h6 class="fw-bold text-success mb-0">Rp 100.000.000</h6>
+                              <h6 class="fw-bold text-success mb-0">Rp 5.000.000</h6>
                             </td>
                             <td class="text-end">
                               <a href="#" class="btn btn-outline-secondary btn-sm waves-effect waves-dark" data-bs-toggle="offcanvas" data-bs-target="#detail-category"><i class="ti ti-zoom-in me-1"></i> Detail</a>

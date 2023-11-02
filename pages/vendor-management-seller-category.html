@@ -108,7 +108,7 @@
                 <div data-i18n="Home">Home</div>
               </a>
             </li>
-            <!-- Dashboards -->
+            <!-- Vendor Management -->
             <li class="menu-item open">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-building-warehouse"></i>
@@ -123,6 +123,22 @@
                 <li class="menu-item">
                   <a href="vendor-management-seller-information.html" class="menu-link">
                     <div data-i18n="Seller Information">Seller Information</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Material Management -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-package"></i>
+                <div data-i18n="Material Management">Material Management</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="material-management-material-request.html" class="menu-link">
+                    <div data-i18n="Material Request">Material Request</div>
                   </a>
                 </li>
               </ul>
@@ -490,7 +506,9 @@
                           <tr>
                             <td>1</td>
                             <td>001</td>
-                            <td>Information Technology</span></td>
+                            <td>
+                              <span class="text-truncate fw-semibold">Information Technology</span>
+                            </td>
                             <td class="text-end">
                               <a href="#" class="btn btn-outline-secondary btn-sm waves-effect waves-dark" data-bs-toggle="offcanvas" data-bs-target="#detail-category"><i class="ti ti-zoom-in me-1"></i> Detail</a>
                             </td>
@@ -498,7 +516,9 @@
                           <tr>
                             <td>2</td>
                             <td>002</td>
-                            <td>Peralatan Kantor</span></td>
+                            <td>
+                              <span class="text-truncate fw-semibold">Peralatan Kantor</span>
+                            </td>
                             <td class="text-end">
                               <a href="#" class="btn btn-outline-secondary btn-sm waves-effect waves-dark" data-bs-toggle="offcanvas" data-bs-target="#detail-category"><i class="ti ti-zoom-in me-1"></i> Detail</a>
                             </td>
@@ -506,7 +526,9 @@
                           <tr>
                             <td>3</td>
                             <td>003</td>
-                            <td>Jasa Konsultan</span></td>
+                            <td>
+                              <span class="text-truncate fw-semibold">Jasa Konsultan</span>
+                            </td>
                             <td class="text-end">
                               <a href="#" class="btn btn-outline-secondary btn-sm waves-effect waves-dark" data-bs-toggle="offcanvas" data-bs-target="#detail-category"><i class="ti ti-zoom-in me-1"></i> Detail</a>
                             </td>
@@ -675,5 +697,6 @@
         $('#datatable,#datatable1').DataTable();
       });
     </script>
+    <script src="../ssets/js/tables-datatables-basic.js"></script>
   </body>
 </html>
