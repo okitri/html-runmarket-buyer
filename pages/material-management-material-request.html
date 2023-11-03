@@ -397,11 +397,11 @@
             <div class="container-xxl flex-grow-1 container-p-y">
 
               <div class="row align-items-center pb-4">
-                <div class="col-8">
+                <div class="col-lg-8">
                   <h4 class="fw-bold mb-2">Material Request</h4>
                   <p class="text-muted mb-0">Users can make requests to purchase items from the procurement department with Material Request.</p>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4">
                   <nav aria-label="breadcrumb">
                     <ol class="breadcrumb breadcrumb-style1 justify-content-end pt-3">
                       <li class="breadcrumb-item">
@@ -490,36 +490,53 @@
                   <div class="card">
                     <div class="card-header border-bottom">
                       <div class="row">
-                        <div class="col-xl-10">
+                        <div class="col-xl-9">
                           <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-8">
                               <div class="form-group row mb-0">
-                                <label for="bs-rangepicker-basic" class="col-lg-4 col-form-label"><i class="ti ti-calendar me-1 mb-1"></i> Date</label>
-                                <div class="col-md-8">
-                                  <input type="text" class="form-control" placeholder="yyyy-mm-dd - yyyy-mm-dd" id="flatpickr-range" />
+                                <label for="bs-rangepicker-basic" class="col-lg-2 col-12 col-form-label fw-semibold"><i class="ti ti-filter fw-semibold me-1 mb-1"></i> Filter</label>
+                                <div class="col-lg-5 col-6">
+                                  <div class="input-group input-group-merge">
+                                    <span class="input-group-text"><i class="ti ti-calendar text-muted"></i></span>
+                                    <input type="text" class="form-control" placeholder="yyyy-mm-dd - yyyy-mm-dd" id="flatpickr-range" />
+                                  </div>
+                                </div>
+                                <div class="col-lg-5 col-6">
+                                  <div class="input-group input-group-merge">
+                                    <span class="input-group-text"><i class="ti ti-sort-descending text-muted"></i></span>
+                                    <select class="form-select" id="" aria-label="">
+                                      <option>Latest to Earliest</option>
+                                      <option>Earliest to Latest</option>
+                                      <option>Highest Price to Cheapest Price</option>
+                                      <option>Highest Price to Cheapest Price</option>
+                                    </select>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-lg-4">
-                              <div class="form-group row mb-0">
-                                <label for="bs-rangepicker-basic" class="col-lg-4 col-form-label"><i class="ti ti-sort-descending me-1 mb-1"></i> Sort</label>
-                                <div class="col-md-8">
-                                  <select class="form-select" id="" aria-label="">
-                                    <option>Latest to Earliest</option>
-                                    <option>Earliest to Latest</option>
-                                    <option>Highest Price to Cheapest Price</option>
-                                    <option>Highest Price to Cheapest Price</option>
-                                  </select>
-                                </div>
+                            <div class="col-lg-1">
+                              <div class="btn-group">
+                                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-icon shadow-none dropdown-toggle hide-arrow waves-effect waves-light">
+                                  <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end w-px-300" style="">
+                                  <li><a class="dropdown-item" href="">Action</a></li>
+                                  <li><a class="dropdown-item" href="">Another action</a></li>
+                                  <li><a class="dropdown-item" href="">Something else here</a></li>
+                                  <li>
+                                    <hr class="dropdown-divider">
+                                  </li>
+                                  <li><a class="dropdown-item" href="">Separated link</a></li>
+                                </ul>
                               </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-3">
                               <a href="#" class="btn btn-label-secondary btn-sm waves-effect waves-light"><i class="ti ti-printer me-1"></i> Print</a>
                               <a href="#" class="btn btn-label-secondary btn-sm waves-effect waves-light"><i class="ti ti-file-export me-1"></i> Export</a>
                             </div>
                           </div>
                         </div>
-                        <div class="col-xl-2 text-end">
+                        <div class="col-xl-3 text-end">
                           <a href="#" class="btn btn-outline-secondary btn-sm waves-effect waves-light" data-bs-toggle="offcanvas" data-bs-target="#insert-rfq"><i class="ti ti-file-report me-1"></i> Process</a>
                           <a href="#" class="btn btn-secondary btn-sm waves-effect waves-light" data-bs-toggle="offcanvas" data-bs-target="#insert-rfq"><i class="ti ti-plus me-1"></i> Insert</a>
                         </div>
