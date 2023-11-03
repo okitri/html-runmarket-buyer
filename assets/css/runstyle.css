@@ -83,7 +83,7 @@ html:not([dir="rtl"]) .app-brand-text {
   display: none;
 }
 .menu-inner-shadow {
-  top: 4rem;
+  top: 4.5rem;
 }
 
 /* Navbar
